@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+	<body>
+		<table width="100%" border="1">
+			<thead>
+				<tr>
+					<th>Author</th>
+					<th>Last modified</th>
+					<th>URL</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+			{% for file in files %}
+			<tr>
+				<td>{{ file["author"] }}</td>
+				<td>{{ file["last_modified"] }}</td>
+				<td>{{ file["url"] }}</td>
+				<td><a href="{{ file["repository"] }}">repository</a></td>
+				<td><a href="{{ file["url"] }}">download</a></td>
+			<tr>
+			{% endfor %}
+			</tbody>
+		</table>
+	</body>
+</html>
