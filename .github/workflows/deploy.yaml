@@ -24,6 +24,7 @@ jobs:
         run: |
           mkdir -p public
           cp collections.html public/index.html
+          cp collections.json public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
