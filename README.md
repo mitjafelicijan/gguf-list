@@ -14,4 +14,3 @@ pip install jinja2 requests
 python fetchdata.py
 python generate.py
 ```
-
