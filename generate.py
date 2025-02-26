@@ -1,6 +1,7 @@
 import sys
 import json
 from jinja2 import Environment, FileSystemLoader
+from datetime import datetime
 
 env = Environment(loader=FileSystemLoader("./"))
 template = env.get_template("template.html")
@@ -23,6 +24,7 @@ for collection in collections:
                     "author": item["author"],
                 })
 
-result = template.render(files=files)
+current_datetime = datetime.now()
+result = template.render(files=files, current_datetime=current_datetime.strftime("%Y-%m-%d %H:%M:%S"))
 with open("collections.html", "w", encoding="utf-8") as f:
     f.write(result)

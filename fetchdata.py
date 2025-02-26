@@ -1,6 +1,3 @@
-# https://huggingface.co/docs/hub/api
-# https://huggingface.co/GGUF-Models
-
 import json
 import requests
 
