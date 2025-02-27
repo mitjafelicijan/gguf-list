@@ -38,4 +38,4 @@ brew install wget dialog
 
 After you can run the utility from terminal with `sh ggufdl.sh`.
 
-
+https://github.com/user-attachments/assets/54a812df-7dfc-4fe9-a4c8-b5e1bff71c12
